@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.books.details.BookDetailsActivity">
+
+    <include layout="@layout/include_toolbar"/>
+
+    <TextView
+        style="@style/MyTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/book_detail_title_label"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bookDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:text="Title 1" />
+
+    <TextView
+        style="@style/MyTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/book_detail_description_label"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bookDetailsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:text="Description 1" />
+
+</LinearLayout>

@@ -1,23 +1,2 @@
-### Este projeto foi feito com intuito de agregar valor no gitHub e também ao meu entendimento sobre algumas funcionalidades, tais como :
-
--> RecyclerView
--> Arquitetura MVVM
--> Comunicação com API através do Retrofit
--> Intent passando dados pra segunda tela
--> ViewFlipper para auxiliar no tratamento de erro
-
-### O app faz a comunicação com a API de livros do The New York Times = https://developer.nytimes.com/docs/books-product/1/routes/lists.json/get
-
-### Utilizando o GET na camada de serviço para obter os dados da API juntamente com a camada do retrofit.
-
-### Criado um objeto que referencia a camada de servico e sendo chamado na camada de dataSource onde faz a chamada assíncrona enqueue, e a busca dos dados.
-
-### A camada de ViewModel recebe a mesma chamada juntamente com os liveData para a comunicação posterior com a mainActivity e sua chamada com os observes que observam as mudanças de estados que são disparados na viewModel.
-
-### Na camada de Repositório é passado um callback que interage com a camada de dataSource e com a camada de ViewModel, fazendo assim a injeção de dependencia passando o objeto do repositório como parametro da camada do viewModel.
-
-### O objeto do Repositório é instanciado e recebe uma chamada que nesse caso é do tratamento de erro da API, caso seja sucesso retorna a lista de livros, caso seja um erro comum retorna uma mensagem com auxilio do ViewFlipper,
-caso seja um erro desconhecido retorna uma mensagem DEFAUT de erro catastrófico, ou desconhecido.
-
 
 
